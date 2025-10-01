@@ -238,6 +238,23 @@ var listvideo =  ['video/video-3.mp4',
 'video/video-5.mp4']
 var video =  listvideo[Math.floor(Math.random()*listvideo.length)];
 </script>
+	<script>
+	var numb = $(this).index(),
+    videos = [
+        "video/video-1.mp4",
+        "video/video-2.mp4",
+        "video/video-3.mp4",
+        "video/video-4.mp4",
+        "video/video-5.mp4",
+        "video/video-6.mp4v"
+    ],
+    myVideo = document.getElementById("myVid");
+    myVideo.src = videos[numb];
+    myVideo.load();
+    setTimeout(function(){
+        myVideo.play();
+    }, 200);
+	</script>
 <script>
 var listcaption = ['I\'m looking for a chilled guy who is clean and fit to try first time sucking and getting sucked. I?ll need a face and body pic please.',
 'Chill girl looking for a man to please. I\'m mostly into anything. Don\'t be shy. I love giving and receiving head. Sex in any position.',
@@ -283,3 +300,4 @@ var caption =  listcaption[Math.floor(Math.random()*listcaption.length)];
 </body>
 </body>
 </html>
+
