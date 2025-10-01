@@ -240,6 +240,19 @@ var video =  listvideo[Math.floor(Math.random()*listvideo.length)];
 </script>
 	<script>
 		<video id="video" src="video/video-1.mp4" autoplay controls></video>
+<script>
+let index = 0
+video = document.getElementsByTagName('video')[0]
+play = () => {
+  const files = document.getElementById('file').files
+  const file = files[index++ % files.length]
+  const url = window.URL.createObjectURL(file)
+  video.src = url
+  video.load()
+}
+video.addEventListener('ended', play, false)
+</script>		
+
 	var numb = $(this).index(),
     video = [
         "video/video-1.mp4",
@@ -301,5 +314,6 @@ var caption =  listcaption[Math.floor(Math.random()*listcaption.length)];
 </body>
 </body>
 </html>
+
 
 
